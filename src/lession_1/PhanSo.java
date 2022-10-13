@@ -90,12 +90,12 @@ public class PhanSo {
         psKetqua.setMauso(ms);
         return psKetqua;
     }
-        public static PhanSo thuongPhanSo(PhanSo ps1, PhanSo ps2){
-            int ts = ps1.tuso * ps2.mauso ;
-            int ms = ps1.mauso * ps2.tuso;
-            PhanSo psKetqua = new PhanSo();
-            psKetqua.setTuso(ts);
-            psKetqua.setMauso(ms);
-            return psKetqua;
+    public static PhanSo thuongPhanSo(PhanSo ps1, PhanSo ps2){
+        int ts = ps1.tuso * ps2.mauso ;
+        int ms = ps1.mauso * ps2.tuso;
+        PhanSo psKetqua = new PhanSo();
+        psKetqua.setTuso(ts);
+        psKetqua.setMauso(ms);
+        return psKetqua;
     }
 }
