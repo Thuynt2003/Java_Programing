@@ -62,7 +62,7 @@ public class TkNganHang {
        if(this.balance<amount){
            System.out.println("Chuyen tien khong thanh cong");
        }else {
-           tk2.balance +=  amount;
+           tk2.balance  +=  amount;
            this.balance -= amount;
            System.out.println("so du tai khoan " + tk2.getId()+ " hien tai: " + tk2.balance);
            System.out.println("so du tai khoan " + getId()+ " hien tai: " + this.balance);
