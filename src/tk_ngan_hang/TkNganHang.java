@@ -39,37 +39,36 @@ public class TkNganHang {
     public void  tk(){
         System.out.println( "So du tai khoan :"+ getBalance());
     }
-    public TkNganHang credit(int amount){
-        TkNganHang cr = new TkNganHang();
+    public int credit(int amount){
         if(balance>0){
-        cr.balance =this.getBalance() + amount;
-        cr.tk();
+            int a =this.getBalance() + amount;
+            System.out.println("tk " + getId() + " vua duoc cong "+ amount + " vao tai khoan");
+            System.out.println("so du tk " + getId() + " hien tai la : " + a);
         }
-        return cr;
+        return 0;
     }
-    public TkNganHang debit(int amount){
-        TkNganHang db = new TkNganHang();
+    public int debit(int amount){
         if(balance<amount){
             System.out.println("Thanh Toan Khong thanh Cong");
         }else {
-            db.balance = this.getBalance() - amount;
-            db.tk();
+            int b = this.getBalance() - amount;
+            System.out.println("tk " + getId() + " vua duoc trừ  "+ amount + " trong tai khoan");
+            System.out.println("so du tk " + getId() + " hien tai la : " + b);
         }
-        return db;
+        return 0;
     }
 
-    public TkNganHang tranferTo(TkNganHang tk2, int amount) {
-       TkNganHang ck = new TkNganHang();
+    public float tranferTo(TkNganHang tk2, int amount) {
        if(this.balance<amount){
            System.out.println("Chuyen tien khong thanh cong");
        }else {
-           ck.balance = tk2.balance +amount;
-           this.balance = this.balance - amount;
-           System.out.println("so du tai khoan " + tk2.getId()+ " hien tai: " + ck.balance);
+           tk2.balance +=  amount;
+           this.balance -= amount;
+           System.out.println("so du tai khoan " + tk2.getId()+ " hien tai: " + tk2.balance);
            System.out.println("so du tai khoan " + getId()+ " hien tai: " + this.balance);
        }
 
-        return ck;
+        return 0;
     }
 
     {
