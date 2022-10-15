@@ -59,7 +59,7 @@ public class TkNganHang {
     }
 
     public float tranferTo(TkNganHang tk2, int amount) {
-       if(this.balance<amount){
+       if(balance<amount){
            System.out.println("Chuyen tien khong thanh cong");
        }else {
            tk2.balance  +=  amount;
