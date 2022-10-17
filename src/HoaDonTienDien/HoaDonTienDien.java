@@ -2,11 +2,11 @@ package HoaDonTienDien;
 
 
 public class HoaDonTienDien {
-     int maKhachHang;
-     String name;
-     String ngayXuatHoaDon;
-     String doiTuongKhachHang;
-     int soLuong;
+    int maKhachHang;
+    String name;
+    String ngayXuatHoaDon;
+    String doiTuongKhachHang;
+    int soLuong;
     float thanhTien;
     public float getThanhTien() {
         return thanhTien;
