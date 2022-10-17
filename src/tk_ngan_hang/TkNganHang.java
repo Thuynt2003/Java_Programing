@@ -36,14 +36,10 @@ public class TkNganHang {
     public void setBalance(int balance) {
         this.balance = balance;
     }
-    public void  tk(){
-        System.out.println( "So du tai khoan :"+ getBalance());
-    }
     public int credit(int amount){
         if(balance>0){
             int a =this.getBalance() + amount;
-            System.out.println("tk " + getId() + " vua duoc cong "+ amount + " vao tai khoan");
-            System.out.println("so du tk " + getId() + " hien tai la : " + a);
+           setBalance(a);
         }
         return 0;
     }
@@ -52,8 +48,7 @@ public class TkNganHang {
             System.out.println("Thanh Toan Khong thanh Cong");
         }else {
             int b = this.getBalance() - amount;
-            System.out.println("tk " + getId() + " vua duoc trừ  "+ amount + " trong tai khoan");
-            System.out.println("so du tk " + getId() + " hien tai la : " + b);
+           setBalance(b);
         }
         return 0;
     }
