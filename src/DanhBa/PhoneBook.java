@@ -13,7 +13,6 @@ public class PhoneBook extends Phone{
                 for (int j = 0; j < phoneList.get(i).getNumbers().size(); j++) {
                     if(!phoneList.get(i).getNumbers().get(j).equals(phone)) {
                         phoneList.get(i).getNumbers().add(phone);
-                        System.out.println(name+","+phone);
                     }
                 }
             } else {
