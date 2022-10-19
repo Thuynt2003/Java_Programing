@@ -41,7 +41,6 @@ public class HoaDonTienDien {
     public String getNgayXuatHoaDon() {
         return ngayXuatHoaDon;
     }
-
     public void setNgayXuatHoaDon(String ngayXuatHoaDon) {
         this.ngayXuatHoaDon = ngayXuatHoaDon;
     }
