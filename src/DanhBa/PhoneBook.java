@@ -66,12 +66,7 @@ public class PhoneBook extends Phone{
 
     @Override
     public void sort() {
-            Collections.sort(phoneList, new Comparator<>() {
-                @Override
-                public int compare(Contact a, Contact b) {
-                    return a.getName().compareTo(b.getName());
-                }
-            });
+
         }
     ArrayList<Contact> phoneList = new ArrayList<Contact>();
 }
