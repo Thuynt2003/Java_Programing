@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane fx:controller="ThongTinSV.InformationController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Text layoutX="41.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Infomation Student" />
+        <TextField fx:id="Name" layoutX="41.0" layoutY="85.0" promptText="Name Student" />
+        <TextField fx:id="Age" layoutX="41.0" layoutY="155.0" promptText="Age" />
+        <TextField fx:id="Email" layoutX="41.0" layoutY="255.0" promptText="Email" />
+        <TextField fx:id="Address" layoutX="41.0" layoutY="355.0" promptText="Address" />
+        <Button onAction="#submit" layoutX="455.0" layoutY="455.0" mnemonicParsing="false" text="Submit" />
+        <Text layoutX="452.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Infomation Student" />
+        <Text fx:id="strName" layoutX="425.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ho va ten" />
+        <Text fx:id="strAge" layoutX="525.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Age" />
+        <Text fx:id="strEmail" layoutX="625.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" />
+        <Text fx:id="strAddress" layoutX="725.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address" />
+    </children>
+</Pane>
