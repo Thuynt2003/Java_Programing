@@ -1,7 +1,8 @@
 package DanhBa;
 
 import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
 
 public class PhoneBook extends Phone{
     @Override
@@ -49,22 +50,33 @@ public class PhoneBook extends Phone{
        }
 
     }
-
-
     @Override
-    public void searchPhone(String name) {
-        for (int i = 0; i < phoneList.size(); i++){
-            if(phoneList.get(i).getName().equals(name)) {
-              for (int j = 0 ; j< phoneList.get(i).getNumbers().size();j++){
-                  System.out.println(phoneList.get(i).getNumbers().get(j));
-              }
+    public Contact searchPhone(String name) {
+        for (Contact c : phoneList){
+            if(c.getName().equals(name)){
+                return c;
             }
         }
+        return null;
     }
+
 
     @Override
     public void sort() {
-
+        Collections.sort(getPhoneList(), new Comparator<Contact>() {
+            @Override
+            public int compare(Contact o1, Contact o2) {
+                return o1.getName().compareTo(o2.getName());
+            }
+        });
         }
+
+
+
+
     ArrayList<Contact> phoneList = new ArrayList<Contact>();
+
+    public ArrayList<Contact> getPhoneList() {
+        return phoneList;
+    }
 }

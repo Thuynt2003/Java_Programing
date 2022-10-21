@@ -1,7 +1,5 @@
 package HoaDonTienDien;
 
-import java.util.ArrayList;
-
 public class Main {
     public  static void main(String[] args){
         TienDienVN vn =new TienDienVN(01,"nguyen thi thuy","12/01/2022",200,"sinh hoat");
