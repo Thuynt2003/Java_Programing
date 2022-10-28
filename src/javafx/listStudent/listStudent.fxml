@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.listStudent.ListControler">
+   <children>
+      <Text layoutX="277.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="List Student">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <ListView fx:id="lvStudents" layoutX="53.0" layoutY="103.0" prefHeight="272.0" prefWidth="494.0" />
+      <Button onAction="#back" layoutX="53.0" layoutY="53.0" mnemonicParsing="false" text="Back">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

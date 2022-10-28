@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.fromStudent.FromController">
+   <children>
+      <Text layoutX="246.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="From Student" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="32.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name Student :" wrappingWidth="139.13671875">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtName" layoutX="195.0" layoutY="81.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Text layoutX="32.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mark :" wrappingWidth="51.3193359375">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="32.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email :" wrappingWidth="51.3193359375">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtEmail" layoutX="195.0" layoutY="152.0">
+      <font>
+         <Font size="18.0" />
+      </font>
+      </TextField>
+      <TextField fx:id="txtMark" layoutX="195.0" layoutY="215.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+
+      <Button onAction="#submits" layoutX="377.0" layoutY="302.0" mnemonicParsing="false" text="Submit">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button onAction="#listStudent" layoutX="465.0" layoutY="39.0" mnemonicParsing="false" text="List Student " />
+   </children>
+</Pane>

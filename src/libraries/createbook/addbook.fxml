@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="486.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="libraries.createbook.CreateController">
+   <children>
+      <Text layoutX="300.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="List of libraries">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtCode" layoutX="275.0" layoutY="54.0" promptText="code book" />
+      <TextField fx:id="txtName" layoutX="275.0" layoutY="102.0" promptText="name book" />
+      <TextField fx:id="txtAuthor" layoutX="275.0" layoutY="147.0" promptText="author" />
+      <TextField fx:id="txtPrice" layoutX="275.0" layoutY="291.0" promptText="price" />
+      <TextField fx:id="txtAmount" layoutX="275.0" layoutY="341.0" promptText="amount" />
+      <Text layoutX="82.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Code Book :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="83.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name Book :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="83.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Author :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="83.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Publishing company :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="77.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type of book :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="82.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="78.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Button onAction="#listBook" layoutX="395.0" layoutY="412.0" mnemonicParsing="false"  prefHeight="33.0" prefWidth="114.0" text="List Book" />
+      <ComboBox fx:id="cbPubCompany" layoutX="274.0" layoutY="187.0" prefWidth="150.0" promptText="publishing companny" />
+      <ComboBox fx:id="cbType" layoutX="274.0" layoutY="240.0" prefWidth="150.0" promptText="type of book" />
+      <Button onAction="#add" layoutX="275.0" layoutY="412.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="102.0" text="ADD" />
+   </children>
+</Pane>
