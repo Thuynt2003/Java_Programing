@@ -15,6 +15,8 @@ import libraries.edit.EditController;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.Objects;
 import java.util.ResourceBundle;
 
@@ -24,6 +26,8 @@ public class ListbookController implements Initializable {
     public  ListView lv;
     public static ObservableList<Book> ls = FXCollections.observableArrayList();
     public TextField txtSearch;
+    private boolean sortName = true;
+    private boolean sortAmount = true;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -59,5 +63,27 @@ public class ListbookController implements Initializable {
               }
           }
           lv.setItems(lsm);
+    }
+
+    public void sortByName(ActionEvent actionEvent) {
+        Collections.sort(ls, new Comparator<Book>() {
+            @Override
+            public int compare(Book o1, Book o2) {
+                return sortName?o1.getName().compareTo(o2.getName()):o2.getName().compareTo(o1.getName());
+            }
+        });
+        sortName = !sortName;
+        lv.refresh();
+    }
+
+    public void sortByAmount(ActionEvent actionEvent) {
+        Collections.sort(ls, new Comparator<Book>() {
+            @Override
+            public int compare(Book o1, Book o2) {
+                return sortAmount?o1.getAmout().compareTo(o2.getAmout()):o2.getAmout().compareTo(o1.getAmout());
+            }
+        });
+        sortAmount = !sortAmount;
+        lv.refresh();
     }
 }
