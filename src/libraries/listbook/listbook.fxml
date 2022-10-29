@@ -5,7 +5,7 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="693.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="libraries.listbook.ListbookController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="443.0" prefWidth="693.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="libraries.listbook.ListbookController">
    <children>
       <Text layoutX="300.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="List Book">
          <font>
@@ -18,5 +18,7 @@
       <Button layoutX="613.0" layoutY="32.0" mnemonicParsing="false" onAction="#delete" text="Delete" />
       <Button layoutX="548.0" layoutY="32.0" mnemonicParsing="false" onAction="#search" text="Search" />
       <TextField fx:id="txtSearch" layoutX="389.0" layoutY="32.0" promptText="Search......" />
+      <Button onAction="#sortByName" layoutX="478.0" layoutY="394.0" mnemonicParsing="false" text="SortByName" />
+      <Button onAction="#sortByAmount" layoutX="573.0" layoutY="394.0" mnemonicParsing="false" text="SortByAmount" />
    </children>
 </Pane>
